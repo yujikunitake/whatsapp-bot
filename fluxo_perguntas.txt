@@ -1,0 +1,94 @@
+Roteiro para testar o FAQ (Helisky Charter)
+==========================================
+
+Use um número que esteja em ALVOS_CHATS no config.py.
+
+Os exemplos abaixo são só guia — o texto exato do bot está no faq_agente.py.
+
+--------------------------------------------------------------------------------
+1) Saudação
+--------------------------------------------------------------------------------
+  • Oi
+  • Olá, bom dia
+  → Bot se apresenta e lista o que cobre (reserva, preço, rota, etc.)
+
+--------------------------------------------------------------------------------
+2) Reserva
+--------------------------------------------------------------------------------
+  • Quero alugar um helicóptero
+  • Como faço a reserva?
+  → E-mail, o que mandar (data, passageiros, rota), disponibilidade
+
+--------------------------------------------------------------------------------
+3) Preço
+--------------------------------------------------------------------------------
+  • Quanto custa o passeio?
+  • Qual o preço por hora?
+  → Faixa indicativa + pedir orçamento por e-mail
+
+--------------------------------------------------------------------------------
+4) Piloto
+--------------------------------------------------------------------------------
+  • Posso pilotar o helicóptero?
+  • Quem é o piloto?
+  → Piloto da empresa; cliente não pilota no pacote normal
+
+--------------------------------------------------------------------------------
+5) Passageiros
+--------------------------------------------------------------------------------
+  • Quantas pessoas cabem?
+  → Capacidade típica + modelos maiores sob consulta
+
+--------------------------------------------------------------------------------
+6) Documentos
+--------------------------------------------------------------------------------
+  • Que documentos preciso levar?
+  → RG/CNH, comprovante; menores
+
+--------------------------------------------------------------------------------
+7) Seguro
+--------------------------------------------------------------------------------
+  • É seguro voar?
+  • Tem seguro?
+  → ANAC, manutenção, seguro da aeronave, briefing
+
+--------------------------------------------------------------------------------
+8) Duração / rota
+--------------------------------------------------------------------------------
+  • Quanto tempo dura o passeio panorâmico?
+  → Ordem de grandeza + rotas sob medida
+
+--------------------------------------------------------------------------------
+9) Clima
+--------------------------------------------------------------------------------
+  • E se estiver chovendo?
+  → Adiamento possível, reagendamento
+
+--------------------------------------------------------------------------------
+10) Cancelamento
+--------------------------------------------------------------------------------
+  • Quero cancelar minha reserva
+  → Prazos e percentuais (fictícios no código)
+
+--------------------------------------------------------------------------------
+11) Contato / endereço / horário
+--------------------------------------------------------------------------------
+  • Qual o telefone?
+  • Onde fica o heliponto?
+  • Qual o horário de atendimento?
+  → Dados fictícios configurados no faq_agente.py
+
+--------------------------------------------------------------------------------
+12) Agradecimento
+--------------------------------------------------------------------------------
+  • Obrigado
+  → Resposta curta de despedida
+
+--------------------------------------------------------------------------------
+13) Fora do FAQ
+--------------------------------------------------------------------------------
+  • Pergunta aleatória (ex.: pizza de helicóptero)
+  → Mensagem genérica pedindo reformular + e-mail de contato
+
+--------------------------------------------------------------------------------
+Ajuste marca, telefone e e-mail no faq_agente.py se quiser outro cenário.
