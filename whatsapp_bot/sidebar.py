@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.remote.webdriver import WebDriver
 from selenium.webdriver.remote.webelement import WebElement
 
-from config import LIST_ROW_XPATH, NAO_LIDA_XPATH
+from .config import LIST_ROW_XPATH, NAO_LIDA_XPATH
 
 
 def row_has_unread(row: WebElement) -> bool:

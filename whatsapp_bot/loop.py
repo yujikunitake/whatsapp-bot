@@ -3,13 +3,13 @@ from __future__ import annotations
 import time
 import traceback
 
-import config
 from selenium.webdriver.remote.webdriver import WebDriver
 
-from faq_agente import responder
-from whatsapp_composer import enviar_texto_no_composer, get_compose_box, scroll_conversa_ate_o_fim
-from whatsapp_io import ultima_mensagem_recebida_meta
-from whatsapp_sidebar import (
+from . import config
+from .composer import enviar_texto_no_composer, get_compose_box, scroll_conversa_ate_o_fim
+from .faq_agente import responder
+from .messages import ultima_mensagem_recebida_meta
+from .sidebar import (
     click_chat,
     find_chat_row_by_name,
     main_mostrando_alvo,

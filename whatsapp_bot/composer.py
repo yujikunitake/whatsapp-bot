@@ -12,7 +12,7 @@ from selenium.webdriver.remote.webelement import WebElement
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from config import COMPOSE_CSS, DIGITACAO_MAX_S, DIGITACAO_MIN_S, DIGITACAO_PAUSA_PONTUACAO_S
+from .config import COMPOSE_CSS, DIGITACAO_MAX_S, DIGITACAO_MIN_S, DIGITACAO_PAUSA_PONTUACAO_S
 
 
 def get_compose_box(driver: WebDriver, timeout: float = 15) -> WebElement:

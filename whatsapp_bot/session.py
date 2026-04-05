@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import time
 
-import config
+from . import config
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.chrome.service import Service
